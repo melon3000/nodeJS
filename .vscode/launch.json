@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run Moodul_3 Projekt_loomad app.js",
+      "program": "${workspaceFolder}/Moodul_3/Projekt_loomad/app.js",
+      "cwd": "${workspaceFolder}/Moodul_3/Projekt_loomad",
+      "console": "integratedTerminal"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 // app.js
 const express = require("express");
 const fs = require("fs");
+const open = require("open").default;
 
 const app = express();
 const PORT = 3000;
@@ -58,4 +59,7 @@ app.use((req, res) => {
 
 app.listen(PORT, () => {
     console.log("Server töötab pordil " + PORT);
+    const url = `http://localhost:${PORT}`;
+    console.log("> "+url);
+    open(url);
 });

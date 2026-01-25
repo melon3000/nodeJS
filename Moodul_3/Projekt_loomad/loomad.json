@@ -5,7 +5,7 @@
     "species": "Koer",
     "age": 3,
     "status": "Otsib kodu",
-    "image": "https://picsum.photos/seed/dog1/400/300"
+    "image": "https://placedog.net/640/480?random=1"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "species": "Koer",
     "age": 5,
     "status": "Ravil",
-    "image": "https://picsum.photos/seed/dog2/400/300"
+    "image": "https://placedog.net/640/480?random=2"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "species": "Koer",
     "age": 2,
     "status": "Otsib kodu",
-    "image": "https://picsum.photos/seed/dog3/400/300"
+    "image": "https://placedog.net/640/480?random=3"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "species": "Koer",
     "age": 6,
     "status": "Broneeritud",
-    "image": "https://picsum.photos/seed/dog4/400/300"
+    "image": "https://placedog.net/640/480?random=4"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "species": "Koer",
     "age": 1,
     "status": "Otsib kodu",
-    "image": "https://picsum.photos/seed/dog5/400/300"
+    "image": "https://placedog.net/640/480?random=5"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "species": "Koer",
     "age": 4,
     "status": "Otsib kodu",
-    "image": "https://picsum.photos/seed/dog6/400/300"
+    "image": "https://placedog.net/640/480?random=6"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "species": "Koer",
     "age": 7,
     "status": "Ravil",
-    "image": "https://picsum.photos/seed/dog7/400/300"
+    "image": "https://placedog.net/640/480?random=7"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "species": "Koer",
     "age": 2,
     "status": "Otsib kodu",
-    "image": "https://picsum.photos/seed/dog8/400/300"
+    "image": "https://placedog.net/640/480?random=8"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "species": "Koer",
     "age": 3,
     "status": "Otsib kodu",
-    "image": "https://picsum.photos/seed/dog9/400/300"
+    "image": "https://placedog.net/640/480?random=9"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "species": "Koer",
     "age": 8,
     "status": "Broneeritud",
-    "image": "https://picsum.photos/seed/dog10/400/300"
+    "image": "https://placedog.net/640/480?random=10"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "species": "Koer",
     "age": 2,
     "status": "Otsib kodu",
-    "image": "https://picsum.photos/seed/dog11/400/300"
+    "image": "https://placedog.net/640/480?random=11"
   },
   {
     "id": 12,
@@ -93,6 +93,6 @@
     "species": "Koer",
     "age": 1,
     "status": "Otsib kodu",
-    "image": "https://picsum.photos/seed/dog12/400/300"
+    "image": "https://placedog.net/640/480?random=12"
   }
 ]
