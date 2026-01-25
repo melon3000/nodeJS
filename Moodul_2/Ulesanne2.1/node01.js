@@ -1,13 +1,13 @@
-// V    äljastab terminali teksti “Node.js töötab”
+// Väljastab terminali teksti “Node.js töötab”
 console.log("Node.js töötab");
 
-// jooksva faili täistee
+// Jooksva faili täistee
 console.log("Faili täistee:", __filename);
 
-// kausta tee, kus fail asub
+// Kausta tee, kus fail asub
 console.log("Kausta tee:", __dirname);
 
-// protsessi käivitamise argumentide massiiv
+// Protsessi käivitamise argumentide massiiv
 console.log("Protsessi argumendid:", process.argv);
 
 /*
