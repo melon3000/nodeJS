@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Muki",
+    "species": "Koer",
+    "age": 3,
+    "status": "Otsib kodu",
+    "image": "https://picsum.photos/seed/dog1/400/300"
+  },
+  {
+    "id": 2,
+    "name": "Rex",
+    "species": "Koer",
+    "age": 5,
+    "status": "Ravil",
+    "image": "https://picsum.photos/seed/dog2/400/300"
+  },
+  {
+    "id": 3,
+    "name": "Bella",
+    "species": "Koer",
+    "age": 2,
+    "status": "Otsib kodu",
+    "image": "https://picsum.photos/seed/dog3/400/300"
+  },
+  {
+    "id": 4,
+    "name": "Bruno",
+    "species": "Koer",
+    "age": 6,
+    "status": "Broneeritud",
+    "image": "https://picsum.photos/seed/dog4/400/300"
+  },
+  {
+    "id": 5,
+    "name": "Luna",
+    "species": "Koer",
+    "age": 1,
+    "status": "Otsib kodu",
+    "image": "https://picsum.photos/seed/dog5/400/300"
+  },
+  {
+    "id": 6,
+    "name": "Max",
+    "species": "Koer",
+    "age": 4,
+    "status": "Otsib kodu",
+    "image": "https://picsum.photos/seed/dog6/400/300"
+  },
+  {
+    "id": 7,
+    "name": "Nora",
+    "species": "Koer",
+    "age": 7,
+    "status": "Ravil",
+    "image": "https://picsum.photos/seed/dog7/400/300"
+  },
+  {
+    "id": 8,
+    "name": "Rocky",
+    "species": "Koer",
+    "age": 2,
+    "status": "Otsib kodu",
+    "image": "https://picsum.photos/seed/dog8/400/300"
+  },
+  {
+    "id": 9,
+    "name": "Kira",
+    "species": "Koer",
+    "age": 3,
+    "status": "Otsib kodu",
+    "image": "https://picsum.photos/seed/dog9/400/300"
+  },
+  {
+    "id": 10,
+    "name": "Oscar",
+    "species": "Koer",
+    "age": 8,
+    "status": "Broneeritud",
+    "image": "https://picsum.photos/seed/dog10/400/300"
+  },
+  {
+    "id": 11,
+    "name": "Molly",
+    "species": "Koer",
+    "age": 2,
+    "status": "Otsib kodu",
+    "image": "https://picsum.photos/seed/dog11/400/300"
+  },
+  {
+    "id": 12,
+    "name": "Teddy",
+    "species": "Koer",
+    "age": 1,
+    "status": "Otsib kodu",
+    "image": "https://picsum.photos/seed/dog12/400/300"
+  }
+]

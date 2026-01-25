@@ -1,0 +1,24 @@
+<%- include("partials/head") %>
+<%- include("partials/menu") %>
+
+<h2 class="h4 mb-3">Viimased 4 lisatud looma</h2>
+
+<div class="row g-3">
+    <% loomad.forEach(l => { %>
+        <div class="col-md-3">
+            <div class="card h-100">
+                <img src="<%= l.image %>" class="card-img-top" alt="<%= l.name %>">
+                <div class="card-body">
+                    <h5 class="card-title"><%= l.name %></h5>
+                    <p class="card-text mb-0">
+                        <strong>Liik:</strong> <%= l.species %><br>
+                        <strong>Vanus:</strong> <%= l.age %><br>
+                        <strong>Staatus:</strong> <%= l.status %>
+                    </p>
+                </div>
+            </div>
+        </div>
+    <% }) %>
+</div>
+
+<%- include("partials/footer") %>
