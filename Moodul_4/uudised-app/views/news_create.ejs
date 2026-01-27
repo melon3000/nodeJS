@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<h1 class="h3 mb-3">Lisa uudis</h1>
+
+<% if (errors && errors.length > 0) { %>
+  <div class="alert alert-danger">
+    <% errors.forEach(e => { %>
+      <div><%= e.msg %></div>
+    <% }) %>
+  </div>
+<% } %>
+
+<form action="/news/create" method="POST">
+  <div class="mb-3">
+    <label class="form-label">Pealkiri</label>
+    <input class="form-control" type="text" name="title" value="<%= values.title || '' %>">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Sisu</label>
+    <textarea class="form-control" name="content" rows="8"><%= values.content || '' %></textarea>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Salvesta</button>
+</form>
+
+<%- include('partials/footer') %>

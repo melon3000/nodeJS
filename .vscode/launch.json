@@ -4,9 +4,17 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Run Moodul_3 Projekt_loomad app.js",
+      "name": "Projekt_loomad/app.js",
       "program": "${workspaceFolder}/Moodul_3/Projekt_loomad/app.js",
       "cwd": "${workspaceFolder}/Moodul_3/Projekt_loomad",
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Uudised/app.js",
+      "program": "${workspaceFolder}/Moodul_4/uudised-app/app.js",
+      "cwd": "${workspaceFolder}/Moodul_4/uudised-app",
       "console": "integratedTerminal"
     }
   ]

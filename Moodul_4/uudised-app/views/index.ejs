@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<% if (msg === 'created') { %>
+  <div class="alert alert-success">Uudis lisatud!</div>
+<% } %>
+<% if (msg === 'create_failed') { %>
+  <div class="alert alert-danger">Uudise lisamine ebaõnnestus!</div>
+<% } %>
+<% if (msg === 'deleted') { %>
+  <div class="alert alert-success">Uudis kustutatud!</div>
+<% } %>
+<% if (msg === 'delete_failed') { %>
+  <div class="alert alert-danger">Uudise kustutamine ebaõnnestus!</div>
+<% } %>
+
+<h1 class="h3 mb-3">Uudised</h1>
+
+<div class="list-group">
+  <% news.forEach(n => { %>
+    <a class="list-group-item list-group-item-action" href="/news/<%= n.id %>">
+      <%= n.title %>
+    </a>
+  <% }) %>
+</div>
+
+<%- include('partials/footer') %>
