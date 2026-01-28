@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+<h1 class="h3 mb-3">Register</h1>
+
+<% if (msg === 'failed') { %>
+  <div class="alert alert-danger">Registreerimine ebaõnnestus.</div>
+<% } %>
+
+<% if (errors && errors.length > 0) { %>
+  <div class="alert alert-danger">
+    <% errors.forEach(e => { %>
+      <div><%= e.msg %></div>
+    <% }) %>
+  </div>
+<% } %>
+
+<form action="/register" method="POST">
+  <div class="mb-3">
+    <label class="form-label">Username</label>
+    <input class="form-control" type="text" name="username" value="<%= values.username || '' %>">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Password</label>
+    <input class="form-control" type="password" name="password">
+    <div class="form-text">Min 4 märki</div>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Register</button>
+</form>
+
+<%- include('partials/footer') %>

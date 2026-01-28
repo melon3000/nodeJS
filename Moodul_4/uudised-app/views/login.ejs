@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+<h1 class="h3 mb-3">Login</h1>
+
+<% if (msg === 'registered') { %>
+  <div class="alert alert-success">Kasutaja loodud. Palun logi sisse.</div>
+<% } %>
+
+<% if (errors && errors.length > 0) { %>
+  <div class="alert alert-danger">
+    <% errors.forEach(e => { %>
+      <div><%= e.msg %></div>
+    <% }) %>
+  </div>
+<% } %>
+
+<form action="/login" method="POST">
+  <div class="mb-3">
+    <label class="form-label">Username</label>
+    <input class="form-control" type="text" name="username" value="<%= values.username || '' %>">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Password</label>
+    <input class="form-control" type="password" name="password">
+  </div>
+
+  <button class="btn btn-primary" type="submit">Login</button>
+</form>
+
+<%- include('partials/footer') %>

@@ -1,17 +1,27 @@
 <%- include('partials/header') %>
 
-<h1 class="h3 mb-3"><%= news.title %></h1>
+<h1 class="h3 mb-2"><%= news.title %></h1>
+
+<div class="text-muted mb-3">
+  <%= news.username ? news.username : 'Unknown' %>
+  •
+  <%= new Date(news.created_at).toLocaleString('et-EE') %>
+</div>
 
 <div class="mb-4" style="white-space: pre-wrap;"><%= news.content %></div>
 
 <div class="d-flex gap-2">
   <a class="btn btn-secondary" href="/">Tagasi</a>
-  <a class="btn btn-outline-primary" href="/news/<%= news.id %>/edit">Muuda</a>
 
-  <form action="/news/delete" method="POST" onsubmit="return confirm('Kas oled kindel, et soovid selle uudise kustutada?');">
-    <input type="hidden" name="id" value="<%= news.id %>">
-    <button class="btn btn-danger" type="submit">Kustuta</button>
-  </form>
+  <% if (canManage) { %>
+    <a class="btn btn-outline-primary" href="/news/<%= news.id %>/edit">Muuda</a>
+
+    <form action="/news/delete" method="POST" class="d-inline"
+          onsubmit="return confirm('Kas oled kindel, et soovid selle uudise kustutada?');">
+      <input type="hidden" name="id" value="<%= news.id %>">
+      <button class="btn btn-danger" type="submit">Kustuta</button>
+    </form>
+  <% } %>
 </div>
 
 <%- include('partials/footer') %>

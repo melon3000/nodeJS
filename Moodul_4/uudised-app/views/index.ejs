@@ -13,12 +13,23 @@
   <div class="alert alert-danger">Uudise kustutamine ebaõnnestus!</div>
 <% } %>
 
+<% if (msg === 'login_required') { %>
+  <div class="alert alert-danger">Uudise lisamiseks/muutmiseks pead olema sisse logitud.</div>
+<% } %>
+
+<% if (msg === 'forbidden') { %>
+  <div class="alert alert-danger">Sul puudub õigus seda uudist muuta või kustutada.</div>
+<% } %>
+
 <h1 class="h3 mb-3">Uudised</h1>
 
 <div class="list-group">
   <% news.forEach(n => { %>
     <a class="list-group-item list-group-item-action" href="/news/<%= n.id %>">
-      <%= n.title %>
+      <div class="fw-semibold"><%= n.title %></div>
+      <small class="text-muted">
+        <%= n.username ? n.username : 'Unknown' %> • <%= new Date(n.created_at).toLocaleString('et-EE') %>
+      </small>
     </a>
   <% }) %>
 </div>
