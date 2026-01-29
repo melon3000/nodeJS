@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
             res.status(500).send("Viga: " + err);
             return;
         }
-        const viimased4 = loomad.slice(-4);
+        const viimased4 = loomad.slice(-5);
         res.render("index", { loomad: viimased4 });
     });
 });
